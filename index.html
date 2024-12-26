@@ -1,84 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="./assets/css/styles.css">
-          <title>MoGo</title>
-          <script src="https://cdn.tailwindcss.com/"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<title>MoGo</title>
+<script src="https://cdn.tailwindcss.com/"></script>
 </head>
 <body>
 
-<header class="header">
-          <div class="container">
-                    <div class="header_inner">
-                              <div class="header__logo items-center">MoGo</div>
-                              <nav class="nav">
-                                        <a class="nav__link" href="#">about</a>
-                                        <a class="nav__link" href="#">servise</a>
-                                        <a class="nav__link" href="#">work</a>
-                                        <a class="nav__link" href="#">blog</a>
-                                        <a class="nav__link" href="#">contact</a>
-                              </nav>
+    <header id="Header">
+        <div class="container">
+                    <div class="header_inner mx-auto">
+                            <div class="header__logo items-center">MoGo</div>
+                            <nav class="nav">
+                                        <a class="nav__link font-semibold" href="#">about</a>
+                                        <a class="nav__link font-semibold" href="#">servise</a>
+                                        <a class="nav__link font-semibold" href="#">work</a>
+                                        <a class="nav__link font-semibold" href="#">blog</a>
+                                        <a class="nav__link font-semibold" href="#">contact</a>
+                            </nav>
                     </div>
-          </div>
-</header>
+        </div>
+    </header>
 
-<div class="intro">
-          <div class="container">
+
+
+    <div class="intro">
+            <div class="container">
                     <div class="intro__inner">
-                              <h2 class="intro__suptitle"> Creative Templace</h2>
-                              <h1 class="intro__title">WELCOME TO MOGO</h1>
+                                <h2 class="intro__suptitle" id="MAINTEXT"> Creative Templace</h2>
+                                <h1 class="intro__title">WELCOME TO MOGO</h1>
 
-                              <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Learn More</a>
+                                <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Learn More</a>
                     </div>
-          </div>
+            </div>
 
                     <div class="slider">
-                              <div class="container">
+                                <div class="container">
                                         <div class="slider__inner">
-                                                  <div class="slider__item active"><span class="slider__num">01</span>INTRO</div>
-                                                  <div class="slider__item"><span class="slider__num">02</span>WORK</div>
-                                                  <div class="slider__item"><span class="slider__num">03</span>ABOUT</div>
-                                                  <div class="slider__item"><span class="slider__num">04</span>CONTACTS</div>
+                                                    <div class="slider__item active"><span class="slider__num mr-2">01</span>INTRO</div>
+                                                    <div class="slider__item"><span class="slider__num mr-2">02</span>WORK</div>
+                                                    <div class="slider__item"><span class="slider__num mr-2">03</span>ABOUT</div>
+                                                    <div class="slider__item"><span class="slider__num mr-2">04</span>CONTACTS</div>
                                         </div>
-                              </div>
+                                </div>
                     </div>
-          </div>
-</div>
-<section class="section">
-          <div class="container">
+            </div>
+    </div>
+    <section class="section">
+            <div class="container">
                     
                     <div class="section__header">
-                              <h3 class="section__suptitle">What we do</h3>
-                              <h2 class="section__title">Story about us</h2>
-                              <div class="section__text">
+                                <h3 class="section__suptitle">What we do</h3>
+                                <h2 class="section__title">Story about us</h2>
+                                <div class="section__text">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                              </div>
+                                </div>
                     </div>
 
                     <div class="about">
-                              <div class="about__item">
+                                <div class="about__item">
                                         <div class="about__img">
-                                                  <img src="assets/image/about/1.jpg" alt="">
+                                                    <img src="assets/image/about/1.jpg" alt="">
                                         </div>
                                         <div class="about__text">never gonna</div>
-                              </div>
-                              <div class="about__item">
+                                </div>
+                                <div class="about__item">
                                         <div class="about__img">
-                                                  <img src="assets/image/about/2.jpg" alt="">
+                                                    <img src="assets/image/about/2.jpg" alt="">
                                         </div>
                                         <div class="about__text">give u up</div>
-                              </div>
-                              <div class="about__item">
+                                </div>
+                                <div class="about__item">
                                         <div class="about__img">
-                                                  <img src="assets/image/about/3.jpg" alt="">
+                                                    <img src="assets/image/about/3.jpg" alt="">
                                         </div>
                                         <div class="about__text">super star</div>
-                              </div>
+                                </div>
                     </div>
-          </div>
-</section>
+            </div>
+    </section>
+
+    <div class="statistic__body flex justify-center text-white items-center">
+        <div class="numbox flex flex-col gap-3 text-center w-48 border-x-2">
+            <h1 class="statistic__value text-5xl font-bold">42</h1>
+            <h2 class="text-xs">Web Design Projects</h2>
+        </div>
+
+        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
+            <h1 class="statistic__value text-5xl font-bold">123</h1>
+            <h2 class="text-xs">happy client</h2>
+        </div>
+
+        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
+            <h1 class="statistic__value text-5xl font-bold">15</h1>
+            <h2 class="text-xs">award winner</h2>
+        </div>
+
+        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
+            <h1 class="statistic__value text-5xl font-bold">99</h1>
+            <h2 class="text-xs">cup of coffee</h2>
+        </div>
+
+        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
+            <h1 class="statistic__value text-5xl font-bold">24</h1>
+            <h2 class="text-xs">members</h2>
+        </div>
+    </div>
+
+    <div class="We_work_with flex flex-col items-center gap-10 mt-10">
+
+        <div class="We_work_with_startxt text-center">
+            <h1 class="section__suptitle">We work with</h1>
+            <h2 class="section__title">Amazing Services</h2>
+        </div>
+
+        <div class="services_cards flex flex-wrap gap-14 justify-center">
+
+            <div class="servece_card flex gap-3 items-start">
+                <img src="./assets/image/Services/Alrm_vector.svg" alt="" width="40">
+                <div class="service_card_text">
+                    <h1 class="text-xl font-bold">Photography</h1>
+                    <h2 class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                </div>
+            </div>
+
+            <div class="servece_card flex gap-3 items-start">
+                <img src="./assets/image/Services/graphic-arrow-svgrepo-com.svg" alt="" width="40">
+                <div class="service_card_text">
+                    <h1 class="text-xl font-bold">Web Design</h1>
+                    <h2 class="">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                </div>
+            </div>
+
+            <div class="servece_card flex gap-3 items-start">
+                <img src="./assets/image/Services/computer-monitor-svgrepo-com.svg" alt="" width="40">
+                <div class="service_card_text">
+                    <h1 class="text-xl font-bold">Creativity</h1>
+                    <h2 class="">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                </div>
+            </div>
+
+            <div class="servece_card flex gap-3 items-start">
+                <img src="./assets/image/Services/book-open-svgrepo-com.svg" alt="" width="40">
+                <div class="service_card_text">
+                    <h1 class="text-xl font-bold">seo</h1>
+                    <h2 class="">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                </div>
+            </div>
+
+            <div class="servece_card flex gap-3 items-start">
+                <img src="./assets/image/Services/house-chimney-blank-svgrepo-com.svg" alt="" width="40">
+                <div class="service_card_text">
+                    <h1 class="text-xl font-bold">Css/Html</h1>
+                    <h2 class="">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</h2>
+                </div>
+            </div>
+
+            <div class="servece_card flex gap-3 items-start">
+                <img src="./assets/image/Services/square-frame-svgrepo-com.svg" alt="" width="40">
+                <div class="service_card_text">
+                    <h1 class="text-xl font-bold">digital</h1>
+                    <h2 class="">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/JAVASCRIPT/MainScript.js"></script>
+
 
 </body>
 </html>

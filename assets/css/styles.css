@@ -18,10 +18,9 @@ h1,h2,h3,h4,h5,h6 {
 /* Container*/
 
 .container {
-          width: 100%;
+          width: 80%;
           overflow: hidden;
           margin: 0 auto;
-          max-width: 1200px;
 }
 
 /* Intro */
@@ -32,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
           justify-content: center;
           width: 100%;
           height: 100vh;
-          background: url(../image/intro.jpg) center no-repeat;
+          background: url(../image/image.png) center no-repeat;
           background-size: cover;
 }
 
@@ -69,17 +68,34 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Header */
 
-.header {
-          position: absolute;
-          width: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 1000;
+header {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-bottom: -48px;
+
+  transition: all 400ms ease;
+}
+
+.is_scrolled {
+  margin: 0 auto;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-bottom: -48px;
+  background-color: #95E1D3;
+
+  transition: all 400ms ease;
 }
 
 .header_inner {
+  width: 95%;
           display: flex;
           justify-content: space-between; 
           align-items: center;
@@ -290,4 +306,29 @@ h1,h2,h3,h4,h5,h6 {
   left: 0;
   z-index: 2;
   transform: opacity .2s linear;
+}
+
+/*------NUms-------- */
+
+.statistic__body {
+  width: 100%;
+  height: 200px;
+  background-color: #95E1D3;
+}
+
+.numbox {
+  height: 100%;
+  justify-content: center;
+  border-color: #ffffff50;
+}
+
+/*--------------Services------------*/
+
+.services_cards {
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.servece_card {
+  width: 400px;
 }
