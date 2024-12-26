@@ -71,6 +71,7 @@ h1,h2,h3,h4,h5,h6 {
 header {
   margin: 0 auto;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -95,7 +96,7 @@ header {
 }
 
 .header_inner {
-  width: 95%;
+  width: 85%;
           display: flex;
           justify-content: space-between; 
           align-items: center;
@@ -183,6 +184,7 @@ header {
 }
 
 .slider__inner {
+  width: 85%;
   display: flex;
   justify-content: space-between;
 }
@@ -261,7 +263,7 @@ header {
 /* About */
 
 .about {
-  margin-top: 80px;
+  width: 85%;
   display: flex;
   justify-content: space-between;
 }
