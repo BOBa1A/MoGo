@@ -1,11 +1,11 @@
 // _____________________________HEADER_______________________________________
 
 const Header = document.getElementById('Header')
+const Headeritems = document.getElementById('header_items')
+document.getElementById('SandButton').onclick = SandwichFunc;
 
 window.addEventListener('scroll', function(){
 	const ScrollPosition = window.scrollY
-
-	console.log(ScrollPosition)
 
 	if (ScrollPosition > 50) {
 		Header.classList.add('is_scrolled')
@@ -13,6 +13,35 @@ window.addEventListener('scroll', function(){
 		Header.classList.remove('is_scrolled')
 	}
 })
+
+function SandwichFunc() {
+	console.log('some text')
+
+	if (Headeritems.classList != 'sandwith_header' ) {
+		Headeritems.classList.add('sandwith_header')
+	} else if (Headeritems.classList == 'sandwith_header') {
+		Headeritems.classList.remove('sandwith_header')
+	}
+	
+}
+
+//_____________________________________For Site____________________________
+
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for(let anchor of anchors) {
+    anchor.addEventListener("click", function(e) {
+    e.preventDefault() 
+
+    const goto = anchor.getAttribute('href')
+
+        document.querySelector('' + goto).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+}
 
 
 
@@ -58,4 +87,3 @@ function setNumbers() {
 		}
 	}
 }
-

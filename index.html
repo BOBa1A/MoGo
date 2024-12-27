@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./assets/css/styles.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<title>MoGo</title>
-<script src="https://cdn.tailwindcss.com/"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/image/MainLogoMogo.svg">
+    <title>MoGo</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
 </head>
 <body>
 
     <header id="Header">
-        <div class="container">
-                    <div class="header_inner mx-auto">
-                            <div class="header__logo items-center">MoGo</div>
-                            <nav class="nav">
-                                        <a class="nav__link font-semibold" href="#">about</a>
-                                        <a class="nav__link font-semibold" href="#">servise</a>
-                                        <a class="nav__link font-semibold" href="#">work</a>
-                                        <a class="nav__link font-semibold" href="#">blog</a>
-                                        <a class="nav__link font-semibold" href="#">contact</a>
-                            </nav>
-                    </div>
+        <div class="" id="header_items">
+            <div class="header__logo font-extrabold text-2xl">MoGo</div>
+            <nav class="nav">
+                <a class="nav__link font-semibold text-center" href="#About">about</a>
+                <a class="nav__link font-semibold text-center" href="#Services">servise</a>
+                <a class="nav__link font-semibold text-center" href="#Work">work</a>
+                <a class="nav__link font-semibold text-center" href="#Blog">blog</a>
+                <a class="nav__link font-semibold text-center" href="#">contact</a>
+            </nav>
+    
+            <button class="Sandwith_button font-extrabold text-2xl" id="SandButton">☰</button>
         </div>
     </header>
 
 
 
-    <div class="intro">
+    <div class="intro" id="Home">
             <div class="container">
                     <div class="intro__inner">
                                 <h2 class="intro__suptitle" id="MAINTEXT"> Creative Templace</h2>
@@ -38,18 +39,18 @@
             </div>
 
                     <div class="slider">
-                                <div class="container">
-                                        <div class="slider__inner">
-                                                    <div class="slider__item active"><span class="slider__num mr-2">01</span>INTRO</div>
-                                                    <div class="slider__item"><span class="slider__num mr-2">02</span>WORK</div>
-                                                    <div class="slider__item"><span class="slider__num mr-2">03</span>ABOUT</div>
-                                                    <div class="slider__item"><span class="slider__num mr-2">04</span>CONTACTS</div>
-                                        </div>
-                                </div>
+
+                        <div class="slider__inner mx-auto">
+                                    <div class="slider__item active"><span class="slider__num mr-2">01</span>INTRO</div>
+                                    <div class="slider__item"><span class="slider__num mr-2">02</span>WORK</div>
+                                    <div class="slider__item"><span class="slider__num mr-2">03</span>ABOUT</div>
+                                    <div class="slider__item"><span class="slider__num mr-2">04</span>CONTACTS</div>
+                        </div>
+
                     </div>
             </div>
     </div>
-    <section class="section">
+    <section class="section" id="About">
             <div class="container">
                     
                     <div class="section__header">
@@ -60,7 +61,7 @@
                                 </div>
                     </div>
 
-                    <div class="about">
+                    <div class="about mx-auto">
                                 <div class="about__item">
                                         <div class="about__img">
                                                     <img src="assets/image/about/1.jpg" alt="">
@@ -71,7 +72,7 @@
                                         <div class="about__img">
                                                     <img src="assets/image/about/2.jpg" alt="">
                                         </div>
-                                        <div class="about__text">give up</div>
+                                        <div class="about__text">give u up</div>
                                 </div>
                                 <div class="about__item">
                                         <div class="about__img">
@@ -83,34 +84,35 @@
             </div>
     </section>
 
-    <div class="statistic__body flex justify-center text-white items-center">
-        <div class="numbox flex flex-col gap-3 text-center w-48 border-x-2">
-            <h1 class="statistic__value text-5xl font-bold">42</h1>
-            <h2 class="text-xs">Web Design Projects</h2>
+    <div class="statistic__body">
+
+        <div class="numbox flex flex-col text-center w-20">
+            <h1 class="statistic__value text-4xl font-bold">42</h1>
+            <h2 class="text-xs h-10">Web Design Projects</h2>
         </div>
 
-        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
-            <h1 class="statistic__value text-5xl font-bold">123</h1>
-            <h2 class="text-xs">happy client</h2>
+        <div class="numbox flex flex-col text-center w-20">
+            <h1 class="statistic__value text-4xl font-bold">123</h1>
+            <h2 class="text-xs h-10">happy client</h2>
         </div>
 
-        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
-            <h1 class="statistic__value text-5xl font-bold">15</h1>
-            <h2 class="text-xs">award winner</h2>
+        <div class="numbox flex flex-col text-center w-20">
+            <h1 class="statistic__value text-4xl font-bold">15</h1>
+            <h2 class="text-xs h-10">award winner</h2>
         </div>
 
-        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
-            <h1 class="statistic__value text-5xl font-bold">99</h1>
-            <h2 class="text-xs">cup of coffee</h2>
+        <div class="numbox flex flex-col text-center w-20">
+            <h1 class="statistic__value text-4xl font-bold">99</h1>
+            <h2 class="text-xs h-10">cup of coffee</h2>
         </div>
 
-        <div class="numbox flex flex-col gap-3 text-center w-48 border-r-2">
-            <h1 class="statistic__value text-5xl font-bold">24</h1>
-            <h2 class="text-xs">members</h2>
+        <div class="numbox flex flex-col text-center w-20">
+            <h1 class="statistic__value text-4xl font-bold">24</h1>
+            <h2 class="text-xs h-10">members</h2>
         </div>
     </div>
 
-    <div class="We_work_with flex flex-col items-center gap-10 mt-10">
+    <div class="We_work_with flex flex-col items-center gap-10 mt-10"  id="Services">
 
         <div class="We_work_with_startxt text-center">
             <h1 class="section__suptitle">We work with</h1>
@@ -146,7 +148,7 @@
             <div class="servece_card flex gap-3 items-start">
                 <img src="./assets/image/Services/book-open-svgrepo-com.svg" alt="" width="40">
                 <div class="service_card_text">
-                    <h1 class="text-xl font-bold">seo</h1>
+                    <h1 class="text-xl font-bold">SEO</h1>
                     <h2 class="">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
                 </div>
             </div>
@@ -170,27 +172,20 @@
         </div>
     </div>
 
-    <script src="./assets/JAVASCRIPT/MainScript.js"></script>
-
-    <section class="section  section--devices">
+    <section class="section  section--devices" id="Work">
         <div class="container">
-
             <div class="section__header">
                 <h3 class="section__suptitle">For all devices</h3>
                 <h2 class="section__title">unique design</h2>
             </div>
-
             <div class="devices">  
                 <img class="devices__item" src="assets/image/ipad.png" alt="">
                 <img class="devices__item devices__item--iphone" src="assets/image/iphone.png" alt="">
             </div>
-
         </div>
     </section>
-
     <section class="section">
         <div class="container">
-
             <div class="section__header">
                 <h3 class="section__suptitle">Service</h3>
                 <h2 class="section__title">What we do</h2>
@@ -198,73 +193,47 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
-
             <div class="wedo">
-                <div class="wedo__item">
-                    <img src="/assets/image/wedo.jpg" alt="">
+                <div class="wedo__item wedo__item--photo">
+                    <img src="assets/image/580x380.png" alt="">
                 </div>
-            
                 <div class="wedo__item">
-            
                     <div class="accordion">
-                        <div class="accordion__item">
-                            <div class="accordion__header">
-                                <img class="accordion__icon" src="/assets/image/Services/accordion/photo.svg" width="30" alt="">
-                                <div class="accordion__title">Photography</div>
-                            </div>
-                            <div class="accordion__content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-            
                         <div class="accordion__item active">
                             <div class="accordion__header">
-                                <img class="accordion__icon" src="/assets/image/Services/accordion/mxier.svg" width="30" alt="">
-                                <div class="accordion__title">Creativity</div>
+                                <img class="accordion__icon" src="assets/image/Services/accordion/photo.svg" width="30" alt="">
+                                <div class="accordion__title">PHOTOGRAPHY</div>
                             </div>
                             <div class="accordion__content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                         </div>
-            
                         <div class="accordion__item">
                             <div class="accordion__header">
-                                <img class="accordion__icon" src="/assets/image/Services/accordion/target.svg" width="30" alt="">
-                                <div class="accordion__title">web design</div>
+                                <img class="accordion__icon" src="assets/image/Services/accordion/mxier.svg" width="30" alt="">
+                                <div class="accordion__title">CREATIVITY</div>
                             </div>
                             <div class="accordion__content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                         </div>
-                    </div><!-- /.accordion -->
-            
-                </div><!-- /.wedo__item -->
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/image/Services/accordion/target.svg" width="30" alt="">
+                                <div class="accordion__title">WEB DESIGH</div>
+                            </div>
+                            <div class="accordion__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <div class="section section--gray">
-        <div class="container">
-
-            <div class="reviews">
-                <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-                <a class="reviews__btn reviews__btn--next" href="#">Next</a>
-
-                <div class="reviews__item">
-                    <img class="reviews__photo"src="/assets/image/JonDoe.png" width="150" height="150" alt="">
-                    <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                    <div class="reviews__author">Jon Doe</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <section class="section">
         <div class="container">
-
             <div class="section__header">
                 <h3 class="section__suptitle">Who we are</h3>
                 <h2 class="section__title">Meet our team</h2>
@@ -272,11 +241,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
-
             <div class="about">
                 <div class="about__item">
                     <div class="about__inner">
-
                         <div class="about__img">
                                     <img src="assets/image/team/1.jpg" alt="">
                         </div>
@@ -304,11 +271,9 @@
                 </div>
                 <div class="about__item">
                     <div class="about__inner">
-
                         <div class="about__img">
                                     <img src="assets/image/team/2.jpg" alt="">
                         </div>
-
                         <div class="about__text">
                             <div class="social">
                                 <a class="social__item" href="#" target="_blank">
@@ -336,7 +301,6 @@
                         <div class="about__img">
                                     <img src="assets/image/team/3.jpg" alt="">
                         </div>
-
                         <div class="about__text">
                             <div class="social">
                                 <a class="social__item" href="#" target="_blank">
@@ -362,10 +326,8 @@
             </div>
         </div>
     </section>
-
     <div class="section section--gray">
         <div class="container">
-
             <div class="logos">
                 <div class="logos__item">
                     <img src="assets/image/logo/1.png" alt="">
@@ -386,13 +348,10 @@
                     <img src="assets/image/logo/6.png" alt="">
                 </div>
             </div>
-
         </div>
     </div>
-
 <section class="section">
     <div class="container">
-
         <div class="section__header">
             <h3 class="section__suptitle">What we do</h3>
             <h2 class="section__title">some of our work</h2>
@@ -400,11 +359,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
-
     </div>
-
     <div class="works">
-
         <div class="works__col">
             <div class="works__item">
                 <img class="works__image" src="assets/image/work/1.jpg" alt="">
@@ -421,7 +377,6 @@
                 </div>
             </div>
         </div>
-
         <div class="works__col">
             <div class="works__item">
                 <img class="works__image" src="assets/image/work/3.jpg" alt="">
@@ -438,7 +393,6 @@
                 </div>
             </div>
         </div>
-
         <div class="works__col">
             <div class="works__item">
                 <img class="works__image" src="assets/image/work/5.jpg" alt="">
@@ -448,7 +402,6 @@
                 </div>
             </div>
         </div>
-
         <div class="works__col">
             <div class="works__item">
                 <img class="works__image" src="assets/image/work/6.jpg" alt="">
@@ -467,14 +420,11 @@
         </div>
     </div>
 </section>
-
 <div class="section">
     <div class="container">
-
         <div class="reviews">
             <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
             <a class="reviews__btn reviews__btn--next" href="#">Next</a>
-
             <div class="reviews__item">
                 <img class="reviews__photo"src="/assets/image/avatar.png" width="150" height="150" alt="">
                 <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -482,18 +432,14 @@
                 <div class="reviews__author">Joshua Earle</div>
             </div>
         </div>
-
     </div>
 </div>
-
 <section class="section section--clients">
     <div class="container">
-
         <div class="section__header">
             <h3 class="section__suptitle">Happy Clients</h3>
             <h2 class="section__title">What people say</h2>
         </div>
-
         <div class="clients">
             <div class="clients__item">
                 <img class="clients__photo" src="assets/image/clients/1.png"" alt="">
@@ -512,7 +458,6 @@
                     <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 </div>
             </div>
-
             <div class="clients__item">
                 <img class="clients__photo" src="assets/image/clients/3.png"" alt="">
                 <div class="clients__content">
@@ -521,7 +466,6 @@
                     <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 </div>
             </div>
-
             <div class="clients__item">
                 <img class="clients__photo" src="assets/image/clients/4.png" alt="">
                 <div class="clients__content">
@@ -533,15 +477,12 @@
         </div>
     </div>
 </section>
-
-<section class="section">
+<section class="section" id="Blog">
     <div class="container">
-
         <div class="section__header">
             <h3 class="section__suptitle">Our Stories</h3>
             <h2 class="section__title">latest blog</h2>
         </div>
-
         <div class="blog">
             <div class="blog__items">
                 <div class="blog__header">
@@ -570,7 +511,6 @@
                 </div>
                 
             </div>
-
             <div class="blog__items">
                 <div class="blog__header">
                     <a href="#">
@@ -627,10 +567,10 @@
                 
             </div>
         </div>
-
     </div>
 </section>
 
+    <script src="./assets/JAVASCRIPT/MainScript.js"></script>
 
 </body>
 </html>
